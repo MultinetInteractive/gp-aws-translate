@@ -2,7 +2,7 @@
 defined( 'ABSPATH' ) or die( 'This plugin must be run within the scope of WordPress.' );
 
 $supportedLanguages = [
-	"ar"    => "Arabic / العربية",
+	"ar"    => "Arabic",
 	"zh"    => "Chinese",
 	"zh-TW" => "Chinese Traditional",
 	"cs"    => "Czech",
