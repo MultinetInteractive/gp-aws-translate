@@ -1,0 +1,30 @@
+<?php
+defined( 'ABSPATH' ) or die( 'This plugin must be run within the scope of WordPress.' );
+
+$supportedLanguages = [
+	"ar"    => "Arabic / العربية",
+	"zh"    => "Chinese",
+	"zh-TW" => "Chinese Traditional",
+	"cs"    => "Czech",
+	"da"    => "Danish",
+	"nl"    => "Dutch",
+	"en"    => "English",
+	"fi"    => "Finnish",
+	"fr"    => "French",
+	"de"    => "German",
+	"he"    => "Hebrew",
+	"hi"    => "Hindi",
+	"id"    => "Indonesian",
+	"it"    => "Italian",
+	"ja"    => "Japanese",
+	"ko"    => "Korean",
+	"ms"    => "Malay",
+	"no"    => "Norwegian",
+	"fa"    => "Persian",
+	"pl"    => "Polish",
+	"pt"    => "Portuguese",
+	"ru"    => "Russian",
+	"es"    => "Spanish",
+	"sv"    => "Swedish",
+	"tr"    => "Turkish",
+];
