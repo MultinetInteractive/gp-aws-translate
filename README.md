@@ -3,7 +3,7 @@ Contributors: mnchga
 Tags: glotpress, suggestions, amazon translate
 Requires at least: 4.7
 Tested up to: 5.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Requires PHP: 5.5
 License: MIT
 License-URI: https://opensource.org/licenses/MIT
@@ -13,13 +13,10 @@ Plugin for GlotPress, that enables integration with Amazon Translate for transla
 
 Plugin for GlotPress, that enables integration with [Amazon Translate](https://aws.amazon.com/translate/) for translation suggestions.
 
-<!--[<img src="https://img.shields.io/wordpress/plugin/v/eduadmin-booking.svg" alt="Plugin version" />](https://wordpress.org/plugins/eduadmin-booking/)
-[<img src="https://img.shields.io/wordpress/plugin/dt/eduadmin-booking.svg" alt="Downloads" />](https://wordpress.org/plugins/eduadmin-booking/)
-[<img src="https://img.shields.io/wordpress/v/eduadmin-booking.svg" alt="Tested up to" />](https://wordpress.org/plugins/eduadmin-booking/)-->
-
-<!--[<img src="https://travis-ci.org/MultinetInteractive/EduAdmin-WordPress.svg?branch=master" alt="Build status" />](https://travis-ci.org/MultinetInteractive/EduAdmin-WordPress)-->
-
-<!--[<img src="https://img.shields.io/github/commits-since/MultinetInteractive/gp-aws-translate/latest.svg" alt="Commits since latest plugin version" />](https://wordpress.org/plugins/eduadmin-booking/)-->
+[<img src="https://img.shields.io/wordpress/plugin/v/gp-aws-translate.svg" alt="Plugin version" />](https://wordpress.org/plugins/gp-aws-translate/)
+[<img src="https://img.shields.io/wordpress/plugin/dt/gp-aws-translate.svg" alt="Downloads" />](https://wordpress.org/plugins/gp-aws-translate/)
+[<img src="https://img.shields.io/wordpress/v/gp-aws-translate.svg" alt="Tested up to" />](https://wordpress.org/plugins/gp-aws-translate/)
+[![Build Status](https://travis-ci.org/MultinetInteractive/gp-aws-translate.svg?branch=master)](https://travis-ci.org/MultinetInteractive/gp-aws-translate)
 
 == Installation ==
 
