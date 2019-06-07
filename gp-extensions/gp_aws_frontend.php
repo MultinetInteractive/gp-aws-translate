@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) or die( 'This plugin must be run within the scope of WordPr
 
 include_once GP_AWS_PLUGIN_PATH . '/includes/_constants.php';
 
-require GP_AWS_PLUGIN_PATH . '/vendor/autoload.php';
+require GP_AWS_PLUGIN_PATH . '/includes/aws.phar';
 
 use Aws\Translate\TranslateClient;
 use Aws\Exception\AwsException;
@@ -11,6 +11,14 @@ use Aws\Exception\AwsException;
 function gp_aws_frontend() {
 	global $wp;
 	global $supportedLanguages;
+
+	$awsRegion       = get_option( 'aws-region' );
+	$awsKey          = get_option( 'aws-account-id' );
+	$awsSecret       = get_option( 'aws-secret-key' );
+
+	if ( empty( $awsRegion ) || empty( $awsKey ) || empty( $awsSecret ) ) {
+		return;
+	}
 
 	preg_match( "/projects\/(.*?)\/([a-z]{2,2})\/.*\/?/i", $wp->query_vars["gp_route"], $matches );
 
@@ -77,10 +85,6 @@ function aws_get_translation() {
 		];
 	}
 
-	if ( $currentLanguage === $targetLanguage ) {
-		return $text;
-	}
-
 	$client = new TranslateClient( [
 		'region'      => $awsRegion,
 		'version'     => '2017-07-01',
@@ -89,6 +93,10 @@ function aws_get_translation() {
 			'secret' => $awsSecret,
 		]
 	] );
+
+	if ( $currentLanguage === $targetLanguage ) {
+		return $text;
+	}
 
 	try {
 		$res = $client->translateText( [

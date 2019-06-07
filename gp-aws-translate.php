@@ -5,7 +5,7 @@ define( 'GP_AWS_PLUGIN_PATH', dirname( __FILE__ ) );
  * Plugin Name: GlotPress Amazon Translate Plugin
  * Plugin URI: https://github.com/MultinetInteractive/gp-aws-translate
  * Description: Enables suggestions for translations
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Chris Gårdenberg, MultiNet Interactive AB
  * Author URI: https://github.com/itssimple
  * License: MIT
